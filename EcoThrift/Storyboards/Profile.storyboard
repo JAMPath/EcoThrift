@@ -123,7 +123,6 @@
                                                 </collectionViewCellContentView>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <connections>
-                                                    <outlet property="postImage" destination="fRg-Ai-gZH" id="thx-yY-1bV"/>
                                                     <segue destination="bKG-tg-Zsa" kind="presentation" id="y97-g1-rP9"/>
                                                 </connections>
                                             </collectionViewCell>
@@ -141,7 +140,6 @@
                         <outlet property="followerValue" destination="qgT-WQ-Pdb" id="9Ou-KU-haB"/>
                         <outlet property="followingValue" destination="KSo-5c-3Ma" id="Lpd-xX-7tZ"/>
                         <outlet property="locationAddress" destination="6rl-2b-ER1" id="8GZ-LG-ap7"/>
-                        <outlet property="postCell" destination="non-KC-OvL" id="hE3-iA-rQz"/>
                         <outlet property="productsSold" destination="qgT-WQ-Pdb" id="tVj-Fl-cxV"/>
                         <outlet property="profileImage" destination="8T1-5x-I36" id="mkP-V3-W9V"/>
                         <outlet property="storeName" destination="2el-0M-Reg" id="bmx-ar-6Sy"/>

@@ -1,0 +1,6 @@
+framework module Pods_EcoThriftTests {
+  umbrella header "Pods-EcoThriftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

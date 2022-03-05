@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>151370405269-iv21fhkoongoojpjlec1f41803dmj8ia.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.151370405269-iv21fhkoongoojpjlec1f41803dmj8ia</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAlk2RTDX-L06fUmrHrJW_5kkDI9XLsJDs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>151370405269</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>JAM.EcoThrift</string>
+	<key>PROJECT_ID</key>
+	<string>ecothrift-eccf8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ecothrift-eccf8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:151370405269:ios:37d9a9fb3e6b3cf980d29c</string>
+</dict>
+</plist>

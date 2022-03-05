@@ -23,6 +23,7 @@
 		A145E5F927D37D4A001DF7EB /* EcoThriftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5F827D37D4A001DF7EB /* EcoThriftUITests.swift */; };
 		A145E5FB27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */; };
 		A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A145E60727D380B4001DF7EB /* MarketPlace.storyboard */; };
+		A1E8866327D421C40013452B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1E8866227D421C40013452B /* GoogleService-Info.plist */; };
 		EA200928053820606AE0AF99 /* Pods_EcoThrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AD174895CF1E9C813C8F4F /* Pods_EcoThrift.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		A145E5F827D37D4A001DF7EB /* EcoThriftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITests.swift; sourceTree = "<group>"; };
 		A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A145E60727D380B4001DF7EB /* MarketPlace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarketPlace.storyboard; sourceTree = "<group>"; };
+		A1E8866227D421C40013452B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C31D0D3958F0CF481AAF3B10 /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D33EB07BAC85057CDA362208 /* Pods-EcoThrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.release.xcconfig"; sourceTree = "<group>"; };
 		EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,10 +150,10 @@
 				A145E60E27D384B2001DF7EB /* Delegates */,
 				A145E60D27D38476001DF7EB /* Storyboards */,
 				A145E60C27D3846E001DF7EB /* Networking */,
-				A145E60B27D3845F001DF7EB /* Views */,
 				A145E60A27D3845A001DF7EB /* Models */,
 				A145E60927D3843D001DF7EB /* Controllers */,
 				A145E5E027D37D4A001DF7EB /* Assets.xcassets */,
+				A1E8866227D421C40013452B /* GoogleService-Info.plist */,
 				A145E5E527D37D4A001DF7EB /* Info.plist */,
 			);
 			path = EcoThrift;
@@ -191,13 +193,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A145E60B27D3845F001DF7EB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		A145E60C27D3846E001DF7EB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +230,6 @@
 				EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */,
 				58A7E43A8DE7D24EE9E89548 /* Pods-EcoThriftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -250,7 +244,8 @@
 				A145E5D027D37D48001DF7EB /* Sources */,
 				A145E5D127D37D48001DF7EB /* Frameworks */,
 				A145E5D227D37D48001DF7EB /* Resources */,
-				1DB13F4616FE3FDD48D4C837 /* [CP] Embed Pods Frameworks */,
+				21734DE836AEFF450DF3B0E0 /* [CP] Embed Pods Frameworks */,
+				AD17A748E2B91CE7F1EF84AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,7 +283,8 @@
 				A145E5F027D37D4A001DF7EB /* Sources */,
 				A145E5F127D37D4A001DF7EB /* Frameworks */,
 				A145E5F227D37D4A001DF7EB /* Resources */,
-				49F2AFD298875AADCBBCF45E /* [CP] Embed Pods Frameworks */,
+				C4A74348E6C54A76AA88218C /* [CP] Embed Pods Frameworks */,
+				5B6038CDF041FC6273E9D8C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -353,6 +349,7 @@
 				2888339727D3A3D40033EA66 /* Profile.storyboard in Resources */,
 				A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */,
 				A145E5DF27D37D48001DF7EB /* Main.storyboard in Resources */,
+				A1E8866327D421C40013452B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +370,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DB13F4616FE3FDD48D4C837 /* [CP] Embed Pods Frameworks */ = {
+		21734DE836AEFF450DF3B0E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,21 +387,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		49F2AFD298875AADCBBCF45E /* [CP] Embed Pods Frameworks */ = {
+		5B6038CDF041FC6273E9D8C2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8FBE7266D60163A7F4DF5167 /* [CP] Check Pods Manifest.lock */ = {
@@ -449,6 +446,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD17A748E2B91CE7F1EF84AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A74348E6C54A76AA88218C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FFD2EE9B03F0B1FDF33771B8 /* [CP] Check Pods Manifest.lock */ = {

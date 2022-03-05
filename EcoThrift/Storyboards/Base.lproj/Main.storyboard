@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4oP-Sc-9x0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,20 +8,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Authentication View Controller-->
+        <scene sceneID="dLM-7a-jI4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EcoThrift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="4oP-Sc-9x0" customClass="AuthenticationViewController" customModule="EcoThrift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JzO-a6-e2K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eco Thrift" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cm-7d-FvD">
+                                <rect key="frame" x="5" y="164" width="404" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="heP-Q5-gKm">
+                                <rect key="frame" x="30" y="664" width="354" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EL-U2-0Qh">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="31"/>
+                                        <color key="tintColor" red="0.68486784430000003" green="0.73425907140000002" blue="0.59597839190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEi-Cu-jod">
+                                        <rect key="frame" x="0.0" y="59" width="354" height="31"/>
+                                        <color key="tintColor" red="0.68486784430000003" green="0.73425907140000002" blue="0.59597839190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CHF-SV-2yY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0cm-7d-FvD" firstAttribute="top" secondItem="CHF-SV-2yY" secondAttribute="top" constant="120" id="0ue-bL-5FH"/>
+                            <constraint firstItem="CHF-SV-2yY" firstAttribute="trailing" secondItem="heP-Q5-gKm" secondAttribute="trailing" constant="30" id="9oc-nU-haw"/>
+                            <constraint firstItem="CHF-SV-2yY" firstAttribute="bottom" secondItem="heP-Q5-gKm" secondAttribute="bottom" constant="108" id="KAP-kP-cLl"/>
+                            <constraint firstItem="0cm-7d-FvD" firstAttribute="leading" secondItem="CHF-SV-2yY" secondAttribute="leading" constant="5" id="KPl-lh-AU4"/>
+                            <constraint firstItem="heP-Q5-gKm" firstAttribute="leading" secondItem="CHF-SV-2yY" secondAttribute="leading" constant="30" id="g6Q-JO-MJy"/>
+                            <constraint firstItem="heP-Q5-gKm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0cm-7d-FvD" secondAttribute="bottom" constant="20" id="gAZ-11-qDJ"/>
+                            <constraint firstItem="CHF-SV-2yY" firstAttribute="trailing" secondItem="0cm-7d-FvD" secondAttribute="trailing" constant="5" id="rFb-B2-od8"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvy-U7-Gms" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="98"/>
+            <point key="canvasLocation" x="116" y="99"/>
         </scene>
     </scenes>
     <resources>
