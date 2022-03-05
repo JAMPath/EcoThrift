@@ -30,9 +30,13 @@ class LoginViewController: UIViewController {
                 print(error.localizedDescription)
             } else {
                 print("Logged in")
-                //segue
+                self.performSegue(withIdentifier: "ToMapSeugue", sender: self)
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
     
     

@@ -35,6 +35,8 @@ class SignupViewController: UIViewController {
                 let newUserInfo = Auth.auth().currentUser
                 let email = newUserInfo?.email
                 
+                self.performSegue(withIdentifier: "signupToMarketSegue", sender: self)
+                
             }
         }
     }

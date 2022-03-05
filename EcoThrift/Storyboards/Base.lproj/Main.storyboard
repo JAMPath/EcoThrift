@@ -145,6 +145,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Signup"/>
                                 <connections>
                                     <action selector="onSignup:" destination="R1z-RA-7Kk" eventType="touchUpInside" id="qLh-Ju-Yci"/>
+                                    <segue destination="Xxi-eW-cv3" kind="show" identifier="signupToMarketSegue" id="CVv-Ad-WwF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -273,13 +274,27 @@
                         <outlet property="emailTextField" destination="Lv3-dG-m3z" id="tAT-dY-T67"/>
                         <outlet property="loginButtone" destination="Jre-X6-eJa" id="1Fe-F3-r3B"/>
                         <outlet property="passwordTextField" destination="Uwt-xA-9AG" id="ZAV-qI-437"/>
+                        <segue destination="Xxi-eW-cv3" kind="show" identifier="ToMapSeugue" id="E0y-VU-y5S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2I-Pb-4pT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="951" y="516"/>
         </scene>
+        <!--MarketPlace-->
+        <scene sceneID="lDP-B7-YcU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MarketPlace" id="Xxi-eW-cv3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OFf-yg-bPZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNo-OS-wzJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="150"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="CVv-Ad-WwF"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Shopping" width="375" height="375"/>
         <systemColor name="systemBackgroundColor">

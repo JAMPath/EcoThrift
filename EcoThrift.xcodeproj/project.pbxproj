@@ -27,6 +27,10 @@
 		A1E8866727D4231E0013452B /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866427D4231D0013452B /* AuthenticationViewController.swift */; };
 		A1E8866827D4231E0013452B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866527D4231D0013452B /* SignupViewController.swift */; };
 		A1E8866927D4231E0013452B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866627D4231D0013452B /* LoginViewController.swift */; };
+		A1E8866D27D425320013452B /* InfoCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866A27D425320013452B /* InfoCardViewController.swift */; };
+		A1E8866F27D425320013452B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866C27D425320013452B /* MapViewController.swift */; };
+		A1E8867127D425870013452B /* ThriftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867027D425870013452B /* ThriftStore.swift */; };
+		A1E8867327D427B30013452B /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E8867227D427B30013452B /* Shopping.storyboard */; };
 		EA200928053820606AE0AF99 /* Pods_EcoThrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AD174895CF1E9C813C8F4F /* Pods_EcoThrift.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,10 @@
 		A1E8866427D4231D0013452B /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		A1E8866527D4231D0013452B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A1E8866627D4231D0013452B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A1E8866A27D425320013452B /* InfoCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCardViewController.swift; sourceTree = "<group>"; };
+		A1E8866C27D425320013452B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A1E8867027D425870013452B /* ThriftStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThriftStore.swift; sourceTree = "<group>"; };
+		A1E8867227D427B30013452B /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		C31D0D3958F0CF481AAF3B10 /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D33EB07BAC85057CDA362208 /* Pods-EcoThrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.release.xcconfig"; sourceTree = "<group>"; };
 		EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				A1E8866427D4231D0013452B /* AuthenticationViewController.swift */,
+				A1E8866A27D425320013452B /* InfoCardViewController.swift */,
+				A1E8866C27D425320013452B /* MapViewController.swift */,
 				A1E8866627D4231D0013452B /* LoginViewController.swift */,
 				A1E8866527D4231D0013452B /* SignupViewController.swift */,
 				2888339827D3A40E0033EA66 /* ProfileViewController.swift */,
@@ -198,6 +208,7 @@
 		A145E60A27D3845A001DF7EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1E8867027D425870013452B /* ThriftStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 			children = (
 				A145E5DD27D37D48001DF7EB /* Main.storyboard */,
 				A145E60727D380B4001DF7EB /* MarketPlace.storyboard */,
+				A1E8867227D427B30013452B /* Shopping.storyboard */,
 				A145E5E227D37D4A001DF7EB /* LaunchScreen.storyboard */,
 				2888339627D3A3D40033EA66 /* Profile.storyboard */,
 			);
@@ -359,6 +371,7 @@
 				A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */,
 				A145E5DF27D37D48001DF7EB /* Main.storyboard in Resources */,
 				A1E8866327D421C40013452B /* GoogleService-Info.plist in Resources */,
+				A1E8867327D427B30013452B /* Shopping.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,9 +535,12 @@
 			files = (
 				A1E8866927D4231E0013452B /* LoginViewController.swift in Sources */,
 				A145E5DC27D37D48001DF7EB /* ViewController.swift in Sources */,
+				A1E8867127D425870013452B /* ThriftStore.swift in Sources */,
+				A1E8866D27D425320013452B /* InfoCardViewController.swift in Sources */,
 				A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */,
 				A1E8866827D4231E0013452B /* SignupViewController.swift in Sources */,
 				2888339927D3A40E0033EA66 /* ProfileViewController.swift in Sources */,
+				A1E8866F27D425320013452B /* MapViewController.swift in Sources */,
 				A1E8866727D4231E0013452B /* AuthenticationViewController.swift in Sources */,
 				A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */,
 				2888339D27D3B39B0033EA66 /* PostDetailsViewController.swift in Sources */,
