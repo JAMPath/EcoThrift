@@ -24,6 +24,9 @@
 		A145E5FB27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */; };
 		A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A145E60727D380B4001DF7EB /* MarketPlace.storyboard */; };
 		A1E8866327D421C40013452B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1E8866227D421C40013452B /* GoogleService-Info.plist */; };
+		A1E8866727D4231E0013452B /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866427D4231D0013452B /* AuthenticationViewController.swift */; };
+		A1E8866827D4231E0013452B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866527D4231D0013452B /* SignupViewController.swift */; };
+		A1E8866927D4231E0013452B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866627D4231D0013452B /* LoginViewController.swift */; };
 		EA200928053820606AE0AF99 /* Pods_EcoThrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AD174895CF1E9C813C8F4F /* Pods_EcoThrift.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,9 @@
 		A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A145E60727D380B4001DF7EB /* MarketPlace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarketPlace.storyboard; sourceTree = "<group>"; };
 		A1E8866227D421C40013452B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1E8866427D4231D0013452B /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		A1E8866527D4231D0013452B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A1E8866627D4231D0013452B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C31D0D3958F0CF481AAF3B10 /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D33EB07BAC85057CDA362208 /* Pods-EcoThrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.release.xcconfig"; sourceTree = "<group>"; };
 		EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 		A145E60927D3843D001DF7EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A1E8866427D4231D0013452B /* AuthenticationViewController.swift */,
+				A1E8866627D4231D0013452B /* LoginViewController.swift */,
+				A1E8866527D4231D0013452B /* SignupViewController.swift */,
 				2888339827D3A40E0033EA66 /* ProfileViewController.swift */,
 				A145E5DB27D37D48001DF7EB /* ViewController.swift */,
 				2888339C27D3B39B0033EA66 /* PostDetailsViewController.swift */,
@@ -511,9 +520,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E8866927D4231E0013452B /* LoginViewController.swift in Sources */,
 				A145E5DC27D37D48001DF7EB /* ViewController.swift in Sources */,
 				A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */,
+				A1E8866827D4231E0013452B /* SignupViewController.swift in Sources */,
 				2888339927D3A40E0033EA66 /* ProfileViewController.swift in Sources */,
+				A1E8866727D4231E0013452B /* AuthenticationViewController.swift in Sources */,
 				A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */,
 				2888339D27D3B39B0033EA66 /* PostDetailsViewController.swift in Sources */,
 				280CD48127D3BB13008EFE84 /* PostCell.swift in Sources */,
