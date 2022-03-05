@@ -17,6 +17,7 @@
 		A145E5F927D37D4A001DF7EB /* EcoThriftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5F827D37D4A001DF7EB /* EcoThriftUITests.swift */; };
 		A145E5FB27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */; };
 		A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A145E60727D380B4001DF7EB /* MarketPlace.storyboard */; };
+		A14F679B27D39D4D00CAFC70 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A145E5F827D37D4A001DF7EB /* EcoThriftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITests.swift; sourceTree = "<group>"; };
 		A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A145E60727D380B4001DF7EB /* MarketPlace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarketPlace.storyboard; sourceTree = "<group>"; };
+		A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				A145E5DB27D37D48001DF7EB /* ViewController.swift */,
+				A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14F679B27D39D4D00CAFC70 /* AuthenticationViewController.swift in Sources */,
 				A145E5DC27D37D48001DF7EB /* ViewController.swift in Sources */,
 				A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */,
 				A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */,
