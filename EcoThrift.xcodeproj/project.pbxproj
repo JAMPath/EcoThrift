@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C70EDE656C23B2A397EAF38 /* Pods_EcoThriftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D5720DC00DCD04F342C250 /* Pods_EcoThriftTests.framework */; };
+		A111DF5FFE66E0BF975CA0E8 /* Pods_EcoThrift_EcoThriftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE95D250F9A4AE674C76E700 /* Pods_EcoThrift_EcoThriftUITests.framework */; };
 		A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5D727D37D48001DF7EB /* AppDelegate.swift */; };
 		A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5D927D37D48001DF7EB /* SceneDelegate.swift */; };
 		A145E5DC27D37D48001DF7EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5DB27D37D48001DF7EB /* ViewController.swift */; };
@@ -18,20 +20,12 @@
 		A145E5FB27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */; };
 		A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A145E60727D380B4001DF7EB /* MarketPlace.storyboard */; };
 		A14F679B27D39D4D00CAFC70 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */; };
-		A14F679E27D3A1EE00CAFC70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F679D27D3A1EE00CAFC70 /* LoginViewController.swift */; };
 		A14F67A027D3A9DD00CAFC70 /* TeaGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F679F27D3A9DD00CAFC70 /* TeaGreenButton.swift */; };
 		A14F67A327D3AAB600CAFC70 /* TeaGreenButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14F67A227D3AAB600CAFC70 /* TeaGreenButton.xib */; };
 		A14F67A527D3C25F00CAFC70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A14F67A427D3C25F00CAFC70 /* GoogleService-Info.plist */; };
-		A14F67A827D3C43C00CAFC70 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67A727D3C43C00CAFC70 /* FirebaseAuth */; };
-		A14F67AA27D3C43C00CAFC70 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67A927D3C43C00CAFC70 /* FirebaseDatabase */; };
-		A14F67AC27D3C43C00CAFC70 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67AB27D3C43C00CAFC70 /* FirebaseDatabaseSwift-Beta */; };
-		A14F67AE27D3C43C00CAFC70 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67AD27D3C43C00CAFC70 /* FirebaseFirestore */; };
-		A14F67B027D3C43C00CAFC70 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67AF27D3C43C00CAFC70 /* FirebaseFirestoreSwift-Beta */; };
-		A14F67B227D3C43C00CAFC70 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67B127D3C43C00CAFC70 /* FirebaseFunctions */; };
-		A14F67B427D3C43C00CAFC70 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67B327D3C43C00CAFC70 /* FirebaseInAppMessaging-Beta */; };
-		A14F67B627D3C43C00CAFC70 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67B527D3C43C00CAFC70 /* FirebaseInAppMessagingSwift-Beta */; };
-		A14F67B827D3C43C00CAFC70 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67B727D3C43C00CAFC70 /* FirebaseStorage */; };
-		A14F67BA27D3C43D00CAFC70 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A14F67B927D3C43D00CAFC70 /* FirebaseStorageSwift-Beta */; };
+		A14F67BE27D3DAEE00CAFC70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F67BD27D3DAEE00CAFC70 /* LoginViewController.swift */; };
+		A14F67C027D3DDC700CAFC70 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F67BF27D3DDC700CAFC70 /* SignupViewController.swift */; };
+		A26090578E69BB8BB4E9F30D /* Pods_EcoThrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3558489792AFA072F720FD3 /* Pods_EcoThrift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D5720DC00DCD04F342C250 /* Pods_EcoThriftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThriftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC607B3CE72B36820D5AE4B /* Pods-EcoThrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.release.xcconfig"; sourceTree = "<group>"; };
+		24BDD7182C9063E7CE21DD3E /* Pods-EcoThrift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.debug.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.debug.xcconfig"; sourceTree = "<group>"; };
+		907B30690B4813279932B0DD /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A145E5D427D37D48001DF7EB /* EcoThrift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoThrift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A145E5D727D37D48001DF7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A145E5D927D37D48001DF7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,10 +65,16 @@
 		A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A145E60727D380B4001DF7EB /* MarketPlace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarketPlace.storyboard; sourceTree = "<group>"; };
 		A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		A14F679D27D3A1EE00CAFC70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A14F679F27D3A9DD00CAFC70 /* TeaGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaGreenButton.swift; sourceTree = "<group>"; };
 		A14F67A227D3AAB600CAFC70 /* TeaGreenButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeaGreenButton.xib; sourceTree = "<group>"; };
 		A14F67A427D3C25F00CAFC70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A14F67BD27D3DAEE00CAFC70 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A14F67BF27D3DDC700CAFC70 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A413F580C9C3729E5DF1C0AA /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A81F577C23AD43B94AAA5FFE /* Pods-EcoThriftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.release.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDC3450B9E44C1D87B4C2CE1 /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3558489792AFA072F720FD3 /* Pods_EcoThrift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThrift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE95D250F9A4AE674C76E700 /* Pods_EcoThrift_EcoThriftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThrift_EcoThriftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,16 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14F67AC27D3C43C00CAFC70 /* FirebaseDatabaseSwift-Beta in Frameworks */,
-				A14F67B427D3C43C00CAFC70 /* FirebaseInAppMessaging-Beta in Frameworks */,
-				A14F67B827D3C43C00CAFC70 /* FirebaseStorage in Frameworks */,
-				A14F67B627D3C43C00CAFC70 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
-				A14F67AE27D3C43C00CAFC70 /* FirebaseFirestore in Frameworks */,
-				A14F67BA27D3C43D00CAFC70 /* FirebaseStorageSwift-Beta in Frameworks */,
-				A14F67B027D3C43C00CAFC70 /* FirebaseFirestoreSwift-Beta in Frameworks */,
-				A14F67B227D3C43C00CAFC70 /* FirebaseFunctions in Frameworks */,
-				A14F67AA27D3C43C00CAFC70 /* FirebaseDatabase in Frameworks */,
-				A14F67A827D3C43C00CAFC70 /* FirebaseAuth in Frameworks */,
+				A26090578E69BB8BB4E9F30D /* Pods_EcoThrift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C70EDE656C23B2A397EAF38 /* Pods_EcoThriftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A111DF5FFE66E0BF975CA0E8 /* Pods_EcoThrift_EcoThriftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C146A0870D56F747A51F65A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24BDD7182C9063E7CE21DD3E /* Pods-EcoThrift.debug.xcconfig */,
+				1EC607B3CE72B36820D5AE4B /* Pods-EcoThrift.release.xcconfig */,
+				BDC3450B9E44C1D87B4C2CE1 /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */,
+				A413F580C9C3729E5DF1C0AA /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */,
+				907B30690B4813279932B0DD /* Pods-EcoThriftTests.debug.xcconfig */,
+				A81F577C23AD43B94AAA5FFE /* Pods-EcoThriftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		735794AE786153BC0354AAC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3558489792AFA072F720FD3 /* Pods_EcoThrift.framework */,
+				DE95D250F9A4AE674C76E700 /* Pods_EcoThrift_EcoThriftUITests.framework */,
+				00D5720DC00DCD04F342C250 /* Pods_EcoThriftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A145E5CB27D37D48001DF7EB = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +135,8 @@
 				A145E5ED27D37D4A001DF7EB /* EcoThriftTests */,
 				A145E5F727D37D4A001DF7EB /* EcoThriftUITests */,
 				A145E5D527D37D48001DF7EB /* Products */,
+				1C146A0870D56F747A51F65A /* Pods */,
+				735794AE786153BC0354AAC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,8 +237,9 @@
 		A14F679C27D3A1D500CAFC70 /* Auth Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A14F67BD27D3DAEE00CAFC70 /* LoginViewController.swift */,
 				A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */,
-				A14F679D27D3A1EE00CAFC70 /* LoginViewController.swift */,
+				A14F67BF27D3DDC700CAFC70 /* SignupViewController.swift */,
 			);
 			path = "Auth Controllers";
 			sourceTree = "<group>";
@@ -236,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A145E5FE27D37D4A001DF7EB /* Build configuration list for PBXNativeTarget "EcoThrift" */;
 			buildPhases = (
+				ACE253901BE7537CB26517E9 /* [CP] Check Pods Manifest.lock */,
 				A145E5D027D37D48001DF7EB /* Sources */,
 				A145E5D127D37D48001DF7EB /* Frameworks */,
 				A145E5D227D37D48001DF7EB /* Resources */,
+				C425989CC15E10CF533D11DE /* [CP] Embed Pods Frameworks */,
+				600E5E0101A76050D33B38B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,16 +272,6 @@
 			);
 			name = EcoThrift;
 			packageProductDependencies = (
-				A14F67A727D3C43C00CAFC70 /* FirebaseAuth */,
-				A14F67A927D3C43C00CAFC70 /* FirebaseDatabase */,
-				A14F67AB27D3C43C00CAFC70 /* FirebaseDatabaseSwift-Beta */,
-				A14F67AD27D3C43C00CAFC70 /* FirebaseFirestore */,
-				A14F67AF27D3C43C00CAFC70 /* FirebaseFirestoreSwift-Beta */,
-				A14F67B127D3C43C00CAFC70 /* FirebaseFunctions */,
-				A14F67B327D3C43C00CAFC70 /* FirebaseInAppMessaging-Beta */,
-				A14F67B527D3C43C00CAFC70 /* FirebaseInAppMessagingSwift-Beta */,
-				A14F67B727D3C43C00CAFC70 /* FirebaseStorage */,
-				A14F67B927D3C43D00CAFC70 /* FirebaseStorageSwift-Beta */,
 			);
 			productName = EcoThrift;
 			productReference = A145E5D427D37D48001DF7EB /* EcoThrift.app */;
@@ -265,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A145E60127D37D4A001DF7EB /* Build configuration list for PBXNativeTarget "EcoThriftTests" */;
 			buildPhases = (
+				A73F544965252EE350138AE2 /* [CP] Check Pods Manifest.lock */,
 				A145E5E627D37D4A001DF7EB /* Sources */,
 				A145E5E727D37D4A001DF7EB /* Frameworks */,
 				A145E5E827D37D4A001DF7EB /* Resources */,
@@ -283,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A145E60427D37D4A001DF7EB /* Build configuration list for PBXNativeTarget "EcoThriftUITests" */;
 			buildPhases = (
+				004B1ACEBABCE4B2F4921E8F /* [CP] Check Pods Manifest.lock */,
 				A145E5F027D37D4A001DF7EB /* Sources */,
 				A145E5F127D37D4A001DF7EB /* Frameworks */,
 				A145E5F227D37D4A001DF7EB /* Resources */,
+				8592FAB8F03B5B6479BAC59F /* [CP] Embed Pods Frameworks */,
+				3627A063655FF8810C41A571 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,7 +350,6 @@
 			);
 			mainGroup = A145E5CB27D37D48001DF7EB;
 			packageReferences = (
-				A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = A145E5D527D37D48001DF7EB /* Products */;
 			projectDirPath = "";
@@ -373,15 +392,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		004B1ACEBABCE4B2F4921E8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoThrift-EcoThriftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3627A063655FF8810C41A571 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600E5E0101A76050D33B38B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8592FAB8F03B5B6479BAC59F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A73F544965252EE350138AE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoThriftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE253901BE7537CB26517E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoThrift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C425989CC15E10CF533D11DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A145E5D027D37D48001DF7EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14F67BE27D3DAEE00CAFC70 /* LoginViewController.swift in Sources */,
+				A14F67C027D3DDC700CAFC70 /* SignupViewController.swift in Sources */,
 				A14F679B27D39D4D00CAFC70 /* AuthenticationViewController.swift in Sources */,
 				A145E5DC27D37D48001DF7EB /* ViewController.swift in Sources */,
 				A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */,
-				A14F679E27D3A1EE00CAFC70 /* LoginViewController.swift in Sources */,
 				A14F67A027D3A9DD00CAFC70 /* TeaGreenButton.swift in Sources */,
 				A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */,
 			);
@@ -557,6 +714,7 @@
 		};
 		A145E5FF27D37D4A001DF7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24BDD7182C9063E7CE21DD3E /* Pods-EcoThrift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -584,6 +742,7 @@
 		};
 		A145E60027D37D4A001DF7EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EC607B3CE72B36820D5AE4B /* Pods-EcoThrift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -611,6 +770,7 @@
 		};
 		A145E60227D37D4A001DF7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907B30690B4813279932B0DD /* Pods-EcoThriftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,6 +790,7 @@
 		};
 		A145E60327D37D4A001DF7EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A81F577C23AD43B94AAA5FFE /* Pods-EcoThriftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -649,6 +810,7 @@
 		};
 		A145E60527D37D4A001DF7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC3450B9E44C1D87B4C2CE1 /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,6 +828,7 @@
 		};
 		A145E60627D37D4A001DF7EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A413F580C9C3729E5DF1C0AA /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -721,70 +884,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A14F67A727D3C43C00CAFC70 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		A14F67A927D3C43C00CAFC70 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		A14F67AB27D3C43C00CAFC70 /* FirebaseDatabaseSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseDatabaseSwift-Beta";
-		};
-		A14F67AD27D3C43C00CAFC70 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		A14F67AF27D3C43C00CAFC70 /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
-		A14F67B127D3C43C00CAFC70 /* FirebaseFunctions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
-		};
-		A14F67B327D3C43C00CAFC70 /* FirebaseInAppMessaging-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseInAppMessaging-Beta";
-		};
-		A14F67B527D3C43C00CAFC70 /* FirebaseInAppMessagingSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseInAppMessagingSwift-Beta";
-		};
-		A14F67B727D3C43C00CAFC70 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		A14F67B927D3C43D00CAFC70 /* FirebaseStorageSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A14F67A627D3C43C00CAFC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageSwift-Beta";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A145E5CC27D37D48001DF7EB /* Project object */;
 }
