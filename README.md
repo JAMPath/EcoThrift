@@ -1,1 +1,1 @@
-# ThriftIt
+# EcoThrift
