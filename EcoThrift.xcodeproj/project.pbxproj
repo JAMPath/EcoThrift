@@ -31,6 +31,7 @@
 		A1E8866F27D425320013452B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8866C27D425320013452B /* MapViewController.swift */; };
 		A1E8867127D425870013452B /* ThriftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867027D425870013452B /* ThriftStore.swift */; };
 		A1E8867327D427B30013452B /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E8867227D427B30013452B /* Shopping.storyboard */; };
+		A1E8867527D42B4C0013452B /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867427D42B4C0013452B /* StoreViewController.swift */; };
 		EA200928053820606AE0AF99 /* Pods_EcoThrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AD174895CF1E9C813C8F4F /* Pods_EcoThrift.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		A1E8866C27D425320013452B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1E8867027D425870013452B /* ThriftStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThriftStore.swift; sourceTree = "<group>"; };
 		A1E8867227D427B30013452B /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
+		A1E8867427D42B4C0013452B /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		C31D0D3958F0CF481AAF3B10 /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D33EB07BAC85057CDA362208 /* Pods-EcoThrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.release.xcconfig"; sourceTree = "<group>"; };
 		EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				2888339827D3A40E0033EA66 /* ProfileViewController.swift */,
 				A145E5DB27D37D48001DF7EB /* ViewController.swift */,
 				2888339C27D3B39B0033EA66 /* PostDetailsViewController.swift */,
+				A1E8867427D42B4C0013452B /* StoreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				A1E8866D27D425320013452B /* InfoCardViewController.swift in Sources */,
 				A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */,
 				A1E8866827D4231E0013452B /* SignupViewController.swift in Sources */,
+				A1E8867527D42B4C0013452B /* StoreViewController.swift in Sources */,
 				2888339927D3A40E0033EA66 /* ProfileViewController.swift in Sources */,
 				A1E8866F27D425320013452B /* MapViewController.swift in Sources */,
 				A1E8866727D4231E0013452B /* AuthenticationViewController.swift in Sources */,

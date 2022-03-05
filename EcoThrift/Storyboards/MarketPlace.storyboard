@@ -48,14 +48,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="syk-rM-gyo">
-                                <rect key="frame" x="20" y="420" width="374" height="352"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="syk-rM-gyo">
+                                <rect key="frame" x="0.0" y="450" width="414" height="358"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodWillStoreImage" translatesAutoresizingMaskIntoConstraints="NO" id="cei-cS-4MP">
-                                        <rect key="frame" x="37" y="58" width="153" height="193"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goodwill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qw-2f-lMB">
                                         <rect key="frame" x="198" y="82" width="145" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,6 +58,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodWillStoreImage" translatesAutoresizingMaskIntoConstraints="NO" id="cei-cS-4MP">
+                                        <rect key="frame" x="37" y="58" width="153" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
@@ -71,6 +70,12 @@
                         <viewLayoutGuide key="safeArea" id="sHY-tF-7bB"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="syk-rM-gyo" firstAttribute="leading" secondItem="sHY-tF-7bB" secondAttribute="leading" id="142-dI-2TJ"/>
+                            <constraint firstItem="sHY-tF-7bB" firstAttribute="bottom" secondItem="syk-rM-gyo" secondAttribute="bottom" id="6L0-ET-7ls"/>
+                            <constraint firstItem="sHY-tF-7bB" firstAttribute="trailing" secondItem="syk-rM-gyo" secondAttribute="trailing" id="TrK-oT-7k8"/>
+                            <constraint firstItem="syk-rM-gyo" firstAttribute="top" secondItem="sHY-tF-7bB" secondAttribute="top" constant="450" id="geM-1O-THj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zbc-Gx-xP2"/>
                     <connections>
