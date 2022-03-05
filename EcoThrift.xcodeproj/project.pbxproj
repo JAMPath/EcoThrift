@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C70EDE656C23B2A397EAF38 /* Pods_EcoThriftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D5720DC00DCD04F342C250 /* Pods_EcoThriftTests.framework */; };
-		A111DF5FFE66E0BF975CA0E8 /* Pods_EcoThrift_EcoThriftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE95D250F9A4AE674C76E700 /* Pods_EcoThrift_EcoThriftUITests.framework */; };
+
+		280CD48127D3BB13008EFE84 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CD48027D3BB13008EFE84 /* PostCell.swift */; };
+		2888339727D3A3D40033EA66 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2888339627D3A3D40033EA66 /* Profile.storyboard */; };
+		2888339927D3A40E0033EA66 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888339827D3A40E0033EA66 /* ProfileViewController.swift */; };
+		2888339D27D3B39B0033EA66 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888339C27D3B39B0033EA66 /* PostDetailsViewController.swift */; };
+		4C337BCDD7EF7FC7306ED380 /* Pods_EcoThriftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44979497E2F855BF4C660FBA /* Pods_EcoThriftTests.framework */; };
+		90904FCB10285871485F8A1F /* Pods_EcoThrift_EcoThriftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD33C1559B7D50F337123761 /* Pods_EcoThrift_EcoThriftUITests.framework */; };
+
 		A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5D727D37D48001DF7EB /* AppDelegate.swift */; };
 		A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5D927D37D48001DF7EB /* SceneDelegate.swift */; };
 		A145E5DC27D37D48001DF7EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5DB27D37D48001DF7EB /* ViewController.swift */; };
@@ -19,6 +25,7 @@
 		A145E5F927D37D4A001DF7EB /* EcoThriftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5F827D37D4A001DF7EB /* EcoThriftUITests.swift */; };
 		A145E5FB27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */; };
 		A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A145E60727D380B4001DF7EB /* MarketPlace.storyboard */; };
+
 		A14F679B27D39D4D00CAFC70 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */; };
 		A14F67A027D3A9DD00CAFC70 /* TeaGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F679F27D3A9DD00CAFC70 /* TeaGreenButton.swift */; };
 		A14F67A327D3AAB600CAFC70 /* TeaGreenButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14F67A227D3AAB600CAFC70 /* TeaGreenButton.xib */; };
@@ -26,6 +33,8 @@
 		A14F67BE27D3DAEE00CAFC70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F67BD27D3DAEE00CAFC70 /* LoginViewController.swift */; };
 		A14F67C027D3DDC700CAFC70 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F67BF27D3DDC700CAFC70 /* SignupViewController.swift */; };
 		A26090578E69BB8BB4E9F30D /* Pods_EcoThrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3558489792AFA072F720FD3 /* Pods_EcoThrift.framework */; };
+
+	
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +55,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00D5720DC00DCD04F342C250 /* Pods_EcoThriftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThriftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
+	
 		1EC607B3CE72B36820D5AE4B /* Pods-EcoThrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.release.xcconfig"; sourceTree = "<group>"; };
-		24BDD7182C9063E7CE21DD3E /* Pods-EcoThrift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.debug.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.debug.xcconfig"; sourceTree = "<group>"; };
+	
 		907B30690B4813279932B0DD /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
+
+		0437BDEBEB80DBCF09F12619 /* Pods-EcoThrift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.debug.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.debug.xcconfig"; sourceTree = "<group>"; };
+		280CD48027D3BB13008EFE84 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		2888339627D3A3D40033EA66 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		2888339827D3A40E0033EA66 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = EcoThrift/Controllers/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		2888339C27D3B39B0033EA66 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		2A8B1911E79D2EF2D54F0BFC /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44979497E2F855BF4C660FBA /* Pods_EcoThriftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThriftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A7E43A8DE7D24EE9E89548 /* Pods-EcoThriftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.release.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.release.xcconfig"; sourceTree = "<group>"; };
+		83AD174895CF1E9C813C8F4F /* Pods_EcoThrift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThrift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 		A145E5D427D37D48001DF7EB /* EcoThrift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoThrift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A145E5D727D37D48001DF7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A145E5D927D37D48001DF7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +85,7 @@
 		A145E5F827D37D4A001DF7EB /* EcoThriftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITests.swift; sourceTree = "<group>"; };
 		A145E5FA27D37D4A001DF7EB /* EcoThriftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoThriftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A145E60727D380B4001DF7EB /* MarketPlace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarketPlace.storyboard; sourceTree = "<group>"; };
+
 		A14F679A27D39D4D00CAFC70 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		A14F679F27D3A9DD00CAFC70 /* TeaGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaGreenButton.swift; sourceTree = "<group>"; };
 		A14F67A227D3AAB600CAFC70 /* TeaGreenButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeaGreenButton.xib; sourceTree = "<group>"; };
@@ -75,6 +97,11 @@
 		BDC3450B9E44C1D87B4C2CE1 /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3558489792AFA072F720FD3 /* Pods_EcoThrift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThrift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE95D250F9A4AE674C76E700 /* Pods_EcoThrift_EcoThriftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoThrift_EcoThriftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		
+		EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				A26090578E69BB8BB4E9F30D /* Pods_EcoThrift.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				4C70EDE656C23B2A397EAF38 /* Pods_EcoThriftTests.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,13 +129,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				A111DF5FFE66E0BF975CA0E8 /* Pods_EcoThrift_EcoThriftUITests.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+
 		1C146A0870D56F747A51F65A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +152,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		735794AE786153BC0354AAC1 /* Frameworks */ = {
+
+
+		280CD47F27D3BAE7008EFE84 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C3558489792AFA072F720FD3 /* Pods_EcoThrift.framework */,
-				DE95D250F9A4AE674C76E700 /* Pods_EcoThrift_EcoThriftUITests.framework */,
-				00D5720DC00DCD04F342C250 /* Pods_EcoThriftTests.framework */,
+				280CD48027D3BB13008EFE84 /* PostCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		47B7A3B165280B6241CB966A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83AD174895CF1E9C813C8F4F /* Pods_EcoThrift.framework */,
+				FD33C1559B7D50F337123761 /* Pods_EcoThrift_EcoThriftUITests.framework */,
+				44979497E2F855BF4C660FBA /* Pods_EcoThriftTests.framework */,
+
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +182,7 @@
 				A145E5D527D37D48001DF7EB /* Products */,
 				1C146A0870D56F747A51F65A /* Pods */,
 				735794AE786153BC0354AAC1 /* Frameworks */,
+
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +199,11 @@
 		A145E5D627D37D48001DF7EB /* EcoThrift */ = {
 			isa = PBXGroup;
 			children = (
+
 				A14F67A127D3AA7A00CAFC70 /* XIB */,
+
+				280CD47F27D3BAE7008EFE84 /* Cells */,
+
 				A145E60E27D384B2001DF7EB /* Delegates */,
 				A145E60D27D38476001DF7EB /* Storyboards */,
 				A145E60C27D3846E001DF7EB /* Networking */,
@@ -187,8 +237,14 @@
 		A145E60927D3843D001DF7EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+
 				A14F679C27D3A1D500CAFC70 /* Auth Controllers */,
+		
+
+				2888339827D3A40E0033EA66 /* ProfileViewController.swift */,
 				A145E5DB27D37D48001DF7EB /* ViewController.swift */,
+				2888339C27D3B39B0033EA66 /* PostDetailsViewController.swift */,
+
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,7 +259,9 @@
 		A145E60B27D3845F001DF7EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+
 				A14F679F27D3A9DD00CAFC70 /* TeaGreenButton.swift */,
+
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +279,9 @@
 				A145E5DD27D37D48001DF7EB /* Main.storyboard */,
 				A145E60727D380B4001DF7EB /* MarketPlace.storyboard */,
 				A145E5E227D37D4A001DF7EB /* LaunchScreen.storyboard */,
+
+				2888339627D3A3D40033EA66 /* Profile.storyboard */,
+
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -234,6 +295,7 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+
 		A14F679C27D3A1D500CAFC70 /* Auth Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +312,20 @@
 				A14F67A227D3AAB600CAFC70 /* TeaGreenButton.xib */,
 			);
 			path = XIB;
+=======
+		D779102E2D491F6C3F7E2A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0437BDEBEB80DBCF09F12619 /* Pods-EcoThrift.debug.xcconfig */,
+				D33EB07BAC85057CDA362208 /* Pods-EcoThrift.release.xcconfig */,
+				2A8B1911E79D2EF2D54F0BFC /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */,
+				C31D0D3958F0CF481AAF3B10 /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */,
+				EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */,
+				58A7E43A8DE7D24EE9E89548 /* Pods-EcoThriftTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,12 +376,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A145E60427D37D4A001DF7EB /* Build configuration list for PBXNativeTarget "EcoThriftUITests" */;
 			buildPhases = (
+
 				004B1ACEBABCE4B2F4921E8F /* [CP] Check Pods Manifest.lock */,
 				A145E5F027D37D4A001DF7EB /* Sources */,
 				A145E5F127D37D4A001DF7EB /* Frameworks */,
 				A145E5F227D37D4A001DF7EB /* Resources */,
 				8592FAB8F03B5B6479BAC59F /* [CP] Embed Pods Frameworks */,
 				3627A063655FF8810C41A571 /* [CP] Copy Pods Resources */,
+
+				8FBE7266D60163A7F4DF5167 /* [CP] Check Pods Manifest.lock */,
+				A145E5F027D37D4A001DF7EB /* Sources */,
+				A145E5F127D37D4A001DF7EB /* Frameworks */,
+				A145E5F227D37D4A001DF7EB /* Resources */,
+				49F2AFD298875AADCBBCF45E /* [CP] Embed Pods Frameworks */,
+
 			);
 			buildRules = (
 			);
@@ -369,6 +453,9 @@
 			files = (
 				A145E5E427D37D4A001DF7EB /* LaunchScreen.storyboard in Resources */,
 				A145E5E127D37D4A001DF7EB /* Assets.xcassets in Resources */,
+
+				2888339727D3A3D40033EA66 /* Profile.storyboard in Resources */,
+
 				A145E60827D380B4001DF7EB /* MarketPlace.storyboard in Resources */,
 				A145E5DF27D37D48001DF7EB /* Main.storyboard in Resources */,
 				A14F67A327D3AAB600CAFC70 /* TeaGreenButton.xib in Resources */,
@@ -393,12 +480,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+
 		004B1ACEBABCE4B2F4921E8F /* [CP] Check Pods Manifest.lock */ = {
+
+		1DB13F4616FE3FDD48D4C837 /* [CP] Embed Pods Frameworks */ = {
+
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
@@ -450,6 +542,20 @@
 			showEnvVarsInLog = 0;
 		};
 		8592FAB8F03B5B6479BAC59F /* [CP] Embed Pods Frameworks */ = {
+
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F2AFD298875AADCBBCF45E /* [CP] Embed Pods Frameworks */ = {
+
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -466,7 +572,11 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+
 		A73F544965252EE350138AE2 /* [CP] Check Pods Manifest.lock */ = {
+
+		8FBE7266D60163A7F4DF5167 /* [CP] Check Pods Manifest.lock */ = {
+
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -481,6 +591,39 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+
+				"$(DERIVED_FILE_DIR)/Pods-EcoThriftTests-checkManifestLockResult.txt",
+
+				"$(DERIVED_FILE_DIR)/Pods-EcoThrift-EcoThriftUITests-checkManifestLockResult.txt",
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+
+		ACE253901BE7537CB26517E9 /* [CP] Check Pods Manifest.lock */ = {
+
+		ACF30A152D54446CC645267B /* [CP] Check Pods Manifest.lock */ = {
+
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+
+				"$(DERIVED_FILE_DIR)/Pods-EcoThrift-checkManifestLockResult.txt",
+
 				"$(DERIVED_FILE_DIR)/Pods-EcoThriftTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,12 +631,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ACE253901BE7537CB26517E9 /* [CP] Check Pods Manifest.lock */ = {
+
+		C425989CC15E10CF533D11DE /* [CP] Embed Pods Frameworks */ = {
+
+		FFD2EE9B03F0B1FDF33771B8 /* [CP] Check Pods Manifest.lock */ = {
+
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks.sh\"\n";
+
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
@@ -508,23 +666,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C425989CC15E10CF533D11DE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoThrift/Pods-EcoThrift-frameworks.sh\"\n";
+
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -539,8 +681,14 @@
 				A14F679B27D39D4D00CAFC70 /* AuthenticationViewController.swift in Sources */,
 				A145E5DC27D37D48001DF7EB /* ViewController.swift in Sources */,
 				A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */,
+
 				A14F67A027D3A9DD00CAFC70 /* TeaGreenButton.swift in Sources */,
+
+				2888339927D3A40E0033EA66 /* ProfileViewController.swift in Sources */,
+
 				A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */,
+				2888339D27D3B39B0033EA66 /* PostDetailsViewController.swift in Sources */,
+				280CD48127D3BB13008EFE84 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,7 +862,11 @@
 		};
 		A145E5FF27D37D4A001DF7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 24BDD7182C9063E7CE21DD3E /* Pods-EcoThrift.debug.xcconfig */;
+
+			baseConfigurationReference = 0437BDEBEB80DBCF09F12619 /* Pods-EcoThrift.debug.xcconfig */;
+
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -742,7 +894,11 @@
 		};
 		A145E60027D37D4A001DF7EB /* Release */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 1EC607B3CE72B36820D5AE4B /* Pods-EcoThrift.release.xcconfig */;
+
+			baseConfigurationReference = D33EB07BAC85057CDA362208 /* Pods-EcoThrift.release.xcconfig */;
+
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -770,7 +926,11 @@
 		};
 		A145E60227D37D4A001DF7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 907B30690B4813279932B0DD /* Pods-EcoThriftTests.debug.xcconfig */;
+
+			baseConfigurationReference = EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -790,7 +950,11 @@
 		};
 		A145E60327D37D4A001DF7EB /* Release */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = A81F577C23AD43B94AAA5FFE /* Pods-EcoThriftTests.release.xcconfig */;
+
+			baseConfigurationReference = 58A7E43A8DE7D24EE9E89548 /* Pods-EcoThriftTests.release.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -810,7 +974,11 @@
 		};
 		A145E60527D37D4A001DF7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = BDC3450B9E44C1D87B4C2CE1 /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */;
+
+			baseConfigurationReference = 2A8B1911E79D2EF2D54F0BFC /* Pods-EcoThrift-EcoThriftUITests.debug.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -828,7 +996,11 @@
 		};
 		A145E60627D37D4A001DF7EB /* Release */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = A413F580C9C3729E5DF1C0AA /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */;
+
+			baseConfigurationReference = C31D0D3958F0CF481AAF3B10 /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
