@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 struct Model {
     let imageURL: URL
@@ -26,6 +27,8 @@ class StoreViewController: UIViewController {
   
     
      var models = [Model]()
+    let rootRef = Database.database().reference(withPath: "products")
+    var refObservers: [DatabaseHandle] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,12 @@ class StoreViewController: UIViewController {
         shopTable.delegate   = self
         
         // Do any additional setup after loading the view.
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
     
 
