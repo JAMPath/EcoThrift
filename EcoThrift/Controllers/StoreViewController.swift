@@ -9,11 +9,11 @@ import UIKit
 import FirebaseDatabase
 
 struct Model {
-    let imageURL: URL
+    let imageURL: String
     let productLabel: String
     let priceLabel: String
     
-    init(text: String!, imageURL: URL!, productLabel:String!, priceLabel:String! ){
+    init(text: String!, imageURL: String!, productLabel:String!, priceLabel:String ){
         self.imageURL = imageURL
         self.productLabel = productLabel
         self.priceLabel = priceLabel
@@ -31,37 +31,21 @@ class StoreViewController: UIViewController {
     var refObservers: [DatabaseHandle] = []
     var data: [String: [String:Any]] = [:]
     
+    @IBOutlet weak var pageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         getData()
-        let url = URL(fileURLWithPath: "https://aws.atomretro.com/xlarge/madcap-england-shockwave-knitted-polo-sorrel-brown-3.jpg")
-        
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
-        
-        
         filterCollectionView.dataSource = self
         filterCollectionView.delegate   = self
         shopTable.register(FeaturedTableViewCell.nib(), forCellReuseIdentifier: FeaturedTableViewCell.identifier  )
         shopTable.dataSource = self
         shopTable.delegate   = self
-        
+        shopTable.reloadData()
+        pageLabel.textColor = UIColor(red: 0.125, green: 0.306, blue: 0.29, alpha: 1)
+
+        pageLabel.font = UIFont(name: "SFProText-Heavy", size: 28)
+        print(models.count)
         // Do any additional setup after loading the view.
     }
     
@@ -72,11 +56,23 @@ class StoreViewController: UIViewController {
     }
     
     func getData(){
+        var i = 0
         let API = DatabaseWrapper()
         API.getAllProducts { key, value in
-            print("\(value["ImgURL"])")
+            print("\(value["ImgURL"]!)")
             self.data[key] = value
-            print(self.data)
+            let url = "\(value["ImgURL"]!)"
+            let price = "\(value["Price"]!)"
+            let name = "\(value["Name"]!)"
+            
+            self.models.append(Model(text: key, imageURL: url, productLabel: name, priceLabel: price))
+            print(self.models[i])
+            i += 1
+            self.shopTable.reloadData()
+        }
+        
+        
+        
         
     }
     
@@ -133,7 +129,7 @@ extension StoreViewController: UICollectionViewDelegate, UICollectionViewDataSou
 extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return 5
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
