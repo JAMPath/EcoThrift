@@ -8,7 +8,7 @@
 import AlamofireImage
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var storeName: UILabel!
@@ -21,6 +21,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     //
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var postCell: UICollectionViewCell!
+    @IBOutlet weak var cameraImageView: UIImageView!
     
     var posts = [[String:Any]]()
     
@@ -30,6 +31,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         // Do any additional setup after loading the view.
         collectionView.delegate = self
         collectionView.dataSource = self
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -51,6 +53,32 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+   
+    @IBAction func onCamera(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        present(picker, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        weak var imageView : UIImageView!
+        let image = info[.editedImage] as! UIImage
+        let size = CGSize(width: 300, height: 300)
+        let scaledImage = image.af.imageScaled(to: size)
+        
+        imageView.image = scaledImage
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Loading up the details screen")
         //Find the selected movie

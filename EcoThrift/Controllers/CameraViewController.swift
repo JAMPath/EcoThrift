@@ -51,6 +51,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let size = sizeTextField.text
         let imageUrl = imageView.image
         //Use Firebase to add the new values
+         //try? DatabaseWrapper.postProduct(name: nameTextField.text!, price: priceTextField.text!, size: sizeTextField.text!, image: imageView.image!)
     }
     /*
     // MARK: - Navigation
