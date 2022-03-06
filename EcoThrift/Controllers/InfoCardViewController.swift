@@ -10,13 +10,18 @@ import UIKit
 class InfoCardViewController: UIViewController {
     @IBOutlet weak var storeName: UILabel!
     @IBOutlet weak var storeImage: UIImageView!
+    @IBAction func tapSegue(_ sender: Any) {
+            self.performSegue(withIdentifier: "marketToProfile", sender: self)
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
-    
+//    self.performSegue(withIdentifier: "InfoCardToProfile", sender: self)
+//
 
     /*
     // MARK: - Navigation

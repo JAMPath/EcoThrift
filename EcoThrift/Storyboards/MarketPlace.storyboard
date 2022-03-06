@@ -90,6 +90,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFK-Vc-dF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="V7L-EV-D4I">
                     <connections>
+                        <action selector="tapSegue:" destination="K62-Xf-5sc" id="s5V-jw-hkH"/>
                         <segue destination="2te-qV-BRz" kind="presentation" identifier="marketToProfile" id="fUj-3A-UKa"/>
                     </connections>
                 </tapGestureRecognizer>
