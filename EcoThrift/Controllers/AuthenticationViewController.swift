@@ -62,7 +62,13 @@ class AuthenticationViewController: UIViewController {
     @IBAction func onSave(_ sender: Any) {
         i += 1
         
-        addProduct()
+        let API = DatabaseWrapper()
+        API.getAllProducts { key, value in
+            print("\(key):\(value)")
+        }
+        
+        
+        
 //        self.ref.child("Products").setValue("Product-\(i)")
 //        self.ref.child("Products").observeSingleEvent(of: .value) { (snapshot) in
 //            if let id = snapshot.value as? String {
