@@ -22,13 +22,24 @@ class DatabaseWrapper{
     }
     
     
-    /// Gets alls products available in the database and passes it to a completion handler
+    /// Gets all products by looping through database
     /// - Parameter completionHandler: completionHandler description
     func getAllProducts(completionHandler: @escaping (_ key:Any, _ value: Any)->Void){
         baseRef.child("Products").observeSingleEvent(of: .value) { snapshot in
             if let dict = snapshot.value as? Dictionary<String, Dictionary<String, Any>> {
                 for (key, value) in dict {
                     completionHandler(key,value)
+                }
+            }
+        }
+    }
+    
+    
+    func getAllStores(comletionHandler: @escaping (_ key:Any, _ value: Any)->Void){
+        baseRef.child("Thriftstores").observeSingleEvent(of: .value) { snapshot in
+            if let dict = snapshot.value as? Dictionary<String, Dictionary<String, Any>> {
+                for (key, value) in dict {
+                    comletionHandler(key,value)
                 }
             }
         }

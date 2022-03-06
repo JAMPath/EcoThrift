@@ -52,6 +52,16 @@ class AuthenticationViewController: UIViewController {
             self.ref.child("Thriftstores").child("Thriftstore_\(id)").child("phone-number").setValue("2097778888")
         }
         
+        for i in 1...10 {
+            let id = Int.random(in: 1...9999)
+            let followers = Int.random(in: 1...999)
+            let following = Int.random(in: 1...100)
+            let sales     = Float.random(in: 10.0...100000.0)
+            
+            self.ref.child("Owners").child("Owner#\(id)").setValue(10)
+            self.ref.child("Owners").child("Owner#\(id)").child("followers").setValue("\(followers)")
+        }
+        
         
         
                     
@@ -64,6 +74,10 @@ class AuthenticationViewController: UIViewController {
         
         let API = DatabaseWrapper()
         API.getAllProducts { key, value in
+            print("\(key):\(value)")
+        }
+        
+        API.getAllStores { key, value in
             print("\(key):\(value)")
         }
         
