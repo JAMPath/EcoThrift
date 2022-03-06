@@ -54,7 +54,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goodwill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qw-2f-lMB">
                                         <rect key="frame" x="198" y="82" width="145" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -64,7 +64,11 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <gestureRecognizers/>
                                 <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="V7L-EV-D4I" appends="YES" id="Jqh-3g-sY9"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sHY-tF-7bB"/>
@@ -84,8 +88,21 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFK-Vc-dF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="V7L-EV-D4I">
+                    <connections>
+                        <segue destination="2te-qV-BRz" kind="presentation" identifier="marketToProfile" id="fUj-3A-UKa"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2537.68115942029" y="89.732142857142847"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="5F0-Zh-Z8V">
+            <objects>
+                <viewControllerPlaceholder id="2te-qV-BRz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85N-sg-sV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3362" y="168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xts-2Z-nlx">
