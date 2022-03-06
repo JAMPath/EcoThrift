@@ -13,7 +13,7 @@ struct Model {
     let productLabel: String
     let priceLabel: String
     
-    init(text: String, imageURL: URL, productLabel:String, priceLabel:String ){
+    init(text: String!, imageURL: URL!, productLabel:String!, priceLabel:String! ){
         self.imageURL = imageURL
         self.productLabel = productLabel
         self.priceLabel = priceLabel
@@ -29,9 +29,12 @@ class StoreViewController: UIViewController {
      var models = [Model]()
     let rootRef = Database.database().reference(withPath: "products")
     var refObservers: [DatabaseHandle] = []
+    var data: [String: [String:Any]] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getData()
         let url = URL(fileURLWithPath: "https://aws.atomretro.com/xlarge/madcap-england-shockwave-knitted-polo-sorrel-brown-3.jpg")
         
         models.append(Model(text: "hello", imageURL: url, productLabel: "sdfsd", priceLabel: "12.55"))
@@ -65,6 +68,15 @@ class StoreViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+    }
+    
+    func getData(){
+        let API = DatabaseWrapper()
+        API.getAllProducts { key, value in
+            print("\(value["ImgURL"])")
+            self.data[key] = value
+            print(self.data)
         
     }
     

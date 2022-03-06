@@ -30,7 +30,7 @@ class DatabaseWrapper{
     
     /// Gets all products by looping through database
     /// - Parameter completionHandler: completionHandler description
-    func getAllProducts(completionHandler: @escaping (_ key:Any, _ value: Any)->Void){
+    func getAllProducts(completionHandler: @escaping (_ key:String, _ value: [String:Any])->Void){
         baseRef.child("Products").observeSingleEvent(of: .value) { snapshot in
             if let dict = snapshot.value as? Dictionary<String, Dictionary<String, Any>> {
                 for (key, value) in dict {
@@ -61,13 +61,13 @@ class DatabaseWrapper{
         }
     }
     
-    func postProduct(name:String, price:Double, size:Character, image: UIImage) throws {
+    func postProduct(name:String, price:String, size:String, image: UIImage) throws {
         let id = Int.random(in: 1...9999)
-        let sizes = ["s","m","l"]
+        
         baseRef.child("Products").child("Product_\(id)").setValue("3")
         baseRef.child("Products").child("Product_\(id)").child("Name").setValue(name)
         baseRef.child("Products").child("Product_\(id)").child("Price").setValue(price)
-        baseRef.child("Products").child("Product_\(id)").child("Size").setValue(sizes[Int.random(in: 0...2)])
+        baseRef.child("Products").child("Product_\(id)").child("Size").setValue(size)
         
         let urlPath = try uploadImage(to: "images/products", image: image)
 
@@ -124,7 +124,7 @@ extension DatabaseError: LocalizedError {
     public var errorDescription: String?{
         switch self{
         case .serverError:
-            return NSLocalizedString("There was a failure retrieving the resources", comment: "It may no longer be available or please try again")
+            return NSLocalizedString("There was a failure retrieving or sending the resources", comment: "It may no longer be available or please try again")
         case .missingResource:
             return NSLocalizedString("", comment: "")
         case .droppedRequest:
