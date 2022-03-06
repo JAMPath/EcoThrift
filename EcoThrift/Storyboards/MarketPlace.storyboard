@@ -49,22 +49,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="syk-rM-gyo">
-                                <rect key="frame" x="0.0" y="450" width="414" height="358"/>
+                                <rect key="frame" x="0.0" y="450" width="414" height="365.5"/>
                                 <subviews>
+<<<<<<< HEAD
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goodwill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qw-2f-lMB">
                                         <rect key="frame" x="198" y="82" width="145" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
+||||||| parent of d2b6081 (final)
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goodwill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qw-2f-lMB">
+                                        <rect key="frame" x="198" y="82" width="145" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+=======
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goodwill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qw-2f-lMB">
+                                        <rect key="frame" x="250" y="82" width="159" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+>>>>>>> d2b6081 (final)
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodWillStoreImage" translatesAutoresizingMaskIntoConstraints="NO" id="cei-cS-4MP">
-                                        <rect key="frame" x="37" y="58" width="153" height="193"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodWillStoreImage" translatesAutoresizingMaskIntoConstraints="NO" id="cei-cS-4MP">
+                                        <rect key="frame" x="16" y="58" width="219" height="205"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="219" id="Tcw-HP-elN"/>
+                                            <constraint firstAttribute="height" constant="205" id="lVE-eV-48n"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+<<<<<<< HEAD
                                 <gestureRecognizers/>
+||||||| parent of d2b6081 (final)
+=======
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4Qw-2f-lMB" secondAttribute="bottom" constant="252" id="Hk9-Kh-h1I"/>
+                                    <constraint firstItem="cei-cS-4MP" firstAttribute="leading" secondItem="syk-rM-gyo" secondAttribute="leadingMargin" constant="8" id="MLT-O5-9zN"/>
+                                    <constraint firstItem="cei-cS-4MP" firstAttribute="top" secondItem="syk-rM-gyo" secondAttribute="topMargin" constant="50" id="Ukx-kD-aoS"/>
+                                    <constraint firstItem="4Qw-2f-lMB" firstAttribute="leading" secondItem="cei-cS-4MP" secondAttribute="trailing" constant="15" id="k5H-bG-DtI"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="cei-cS-4MP" secondAttribute="bottom" constant="83" id="kjU-gy-tKk"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Qw-2f-lMB" secondAttribute="trailing" constant="5" id="sCj-0r-UWh"/>
+                                    <constraint firstItem="4Qw-2f-lMB" firstAttribute="top" secondItem="syk-rM-gyo" secondAttribute="top" constant="82" id="zxf-U7-uG7"/>
+                                </constraints>
+>>>>>>> d2b6081 (final)
                                 <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="V7L-EV-D4I" appends="YES" id="Jqh-3g-sY9"/>
@@ -108,7 +135,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Xts-2Z-nlx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="98f-dj-hPN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="98f-dj-hPN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TsX-BA-ujr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

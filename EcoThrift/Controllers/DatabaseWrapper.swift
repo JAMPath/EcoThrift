@@ -41,7 +41,7 @@ class DatabaseWrapper{
     }
     
     
-    func getAllStores(comletionHandler: @escaping (_ key:Any, _ value: Any)->Void){
+    func getAllStores(comletionHandler: @escaping (_ key:String, _ value: [String:Any])->Void){
         baseRef.child("Thriftstores").observeSingleEvent(of: .value) { snapshot in
             if let dict = snapshot.value as? Dictionary<String, Dictionary<String, Any>> {
                 for (key, value) in dict {
