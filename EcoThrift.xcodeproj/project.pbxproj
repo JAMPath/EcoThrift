@@ -35,6 +35,13 @@
 		A1E8867127D425870013452B /* ThriftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867027D425870013452B /* ThriftStore.swift */; };
 		A1E8867327D427B30013452B /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E8867227D427B30013452B /* Shopping.storyboard */; };
 		A1E8867527D42B4C0013452B /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867427D42B4C0013452B /* StoreViewController.swift */; };
+		A1E8867727D4353B0013452B /* FeaturedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867627D4353B0013452B /* FeaturedTableViewCell.swift */; };
+		A1E8867927D4381C0013452B /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867827D4381B0013452B /* FilterCollectionViewCell.swift */; };
+		A1E8867B27D43DDE0013452B /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867A27D43DDE0013452B /* FilterButton.swift */; };
+		A1E8867D27D469670013452B /* FeaturedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867C27D469670013452B /* FeaturedCardCell.swift */; };
+		A1E8867F27D46AA70013452B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8867E27D46AA70013452B /* Product.swift */; };
+		A1E8868927D47B9F0013452B /* FeaturedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E8868727D47B9F0013452B /* FeaturedTableViewCell.xib */; };
+		A1E8868C27D480E80013452B /* FeaturedCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E8868327D474910013452B /* FeaturedCardCell.xib */; };
 		EA200928053820606AE0AF99 /* Pods_EcoThrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AD174895CF1E9C813C8F4F /* Pods_EcoThrift.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +98,13 @@
 		A1E8867027D425870013452B /* ThriftStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThriftStore.swift; sourceTree = "<group>"; };
 		A1E8867227D427B30013452B /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		A1E8867427D42B4C0013452B /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		A1E8867627D4353B0013452B /* FeaturedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewCell.swift; sourceTree = "<group>"; };
+		A1E8867827D4381B0013452B /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E8867A27D43DDE0013452B /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+		A1E8867C27D469670013452B /* FeaturedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCardCell.swift; sourceTree = "<group>"; };
+		A1E8867E27D46AA70013452B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A1E8868327D474910013452B /* FeaturedCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedCardCell.xib; sourceTree = "<group>"; };
+		A1E8868727D47B9F0013452B /* FeaturedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedTableViewCell.xib; sourceTree = "<group>"; };
 		C31D0D3958F0CF481AAF3B10 /* Pods-EcoThrift-EcoThriftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift-EcoThriftUITests/Pods-EcoThrift-EcoThriftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D33EB07BAC85057CDA362208 /* Pods-EcoThrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThrift.release.xcconfig"; path = "Target Support Files/Pods-EcoThrift/Pods-EcoThrift.release.xcconfig"; sourceTree = "<group>"; };
 		EC6D987A9A414032D028F2AF /* Pods-EcoThriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoThriftTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoThriftTests/Pods-EcoThriftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +233,11 @@
 			isa = PBXGroup;
 			children = (
 				A1E8867027D425870013452B /* ThriftStore.swift */,
+				A1E8867627D4353B0013452B /* FeaturedTableViewCell.swift */,
+				A1E8867827D4381B0013452B /* FilterCollectionViewCell.swift */,
+				A1E8867A27D43DDE0013452B /* FilterButton.swift */,
+				A1E8867C27D469670013452B /* FeaturedCardCell.swift */,
+				A1E8867E27D46AA70013452B /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,6 +257,8 @@
 				A145E60727D380B4001DF7EB /* MarketPlace.storyboard */,
 				A1E8867227D427B30013452B /* Shopping.storyboard */,
 				A145E5E227D37D4A001DF7EB /* LaunchScreen.storyboard */,
+				A1E8868727D47B9F0013452B /* FeaturedTableViewCell.xib */,
+				A1E8868327D474910013452B /* FeaturedCardCell.xib */,
 				2888339627D3A3D40033EA66 /* Profile.storyboard */,
 				28F778E327D4987600B25286 /* Camera.storyboard */,
 			);
@@ -377,6 +398,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E8868C27D480E80013452B /* FeaturedCardCell.xib in Resources */,
+				A1E8868927D47B9F0013452B /* FeaturedTableViewCell.xib in Resources */,
 				A145E5E427D37D4A001DF7EB /* LaunchScreen.storyboard in Resources */,
 				28F778E427D4987600B25286 /* Camera.storyboard in Resources */,
 				A145E5E127D37D4A001DF7EB /* Assets.xcassets in Resources */,
@@ -552,15 +575,20 @@
 				A1E8867127D425870013452B /* ThriftStore.swift in Sources */,
 				A1E8866D27D425320013452B /* InfoCardViewController.swift in Sources */,
 				A145E5D827D37D48001DF7EB /* AppDelegate.swift in Sources */,
+				A1E8867727D4353B0013452B /* FeaturedTableViewCell.swift in Sources */,
 				A1E8866827D4231E0013452B /* SignupViewController.swift in Sources */,
 				A1E8867527D42B4C0013452B /* StoreViewController.swift in Sources */,
 				2888339927D3A40E0033EA66 /* ProfileViewController.swift in Sources */,
 				A1E8866F27D425320013452B /* MapViewController.swift in Sources */,
+				A1E8867D27D469670013452B /* FeaturedCardCell.swift in Sources */,
+				A1E8867F27D46AA70013452B /* Product.swift in Sources */,
+				A1E8867927D4381C0013452B /* FilterCollectionViewCell.swift in Sources */,
 				A1E8866727D4231E0013452B /* AuthenticationViewController.swift in Sources */,
 				28F778E827D499A900B25286 /* CameraViewController.swift in Sources */,
 				A145E5DA27D37D48001DF7EB /* SceneDelegate.swift in Sources */,
 				2888339D27D3B39B0033EA66 /* PostDetailsViewController.swift in Sources */,
 				280CD48127D3BB13008EFE84 /* PostCell.swift in Sources */,
+				A1E8867B27D43DDE0013452B /* FilterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
