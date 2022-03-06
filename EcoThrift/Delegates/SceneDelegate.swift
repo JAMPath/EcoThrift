@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let storyboard = UIStoryboard(name: "Shopping", bundle: nil)
         window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
-    
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
